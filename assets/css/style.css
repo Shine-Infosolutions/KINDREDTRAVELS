@@ -1,5 +1,5 @@
 /*=================Scss Indexing=============
-1.variables
+1.vaiables
 2.typography
 3.spacing
 4.reset
@@ -27487,3 +27487,53 @@ body {
   }
 
 }
+@media (max-width: 768px) {
+
+  /* Image container */
+  .tour-wrapper .image-area {
+    width: 100%;
+    aspect-ratio: 4 / 3;     /* proper card ratio */
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;        /* gap aaye to clean lage */
+  }
+
+  /* Image full show – NO CROP */
+  .tour-wrapper .image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* IMPORTANT */
+  }
+
+}
+/* Counter wrapper flex for desktop */
+.rts-counter-area .section-inner {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+    gap: 20px; /* spacing between cards */
+}
+
+/* Each counter card */
+.rts-counter-area .counter-wrapper {
+    flex: 1 1 22%; /* default width for desktop */
+    min-width: 200px; /* ensure cards don't get too small */
+}
+
+/* Responsive for tablets / mobile */
+@media (max-width: 768px) {
+    .rts-counter-area .counter-wrapper {
+        flex: 1 1 45%; /* two cards per row */
+        margin-bottom: 20px; /* spacing at bottom */
+    }
+}
+
+@media (max-width: 480px) {
+    .rts-counter-area .counter-wrapper {
+        flex: 1 1 100%; /* stack full width if very small */
+    }
+}
+
+
+
+
+
