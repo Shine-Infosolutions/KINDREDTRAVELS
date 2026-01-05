@@ -27333,3 +27333,157 @@ body {
 }
 
 
+/* ================= MOBILE RESPONSIVE FIXES ================= */
+@media (max-width: 768px) {
+
+    /* 1️⃣ HEADER OVERLAP FIX (NO DESIGN CHANGE) */
+    body {
+        padding-top: 70px;   /* only creates space, nothing visual changes */
+        overflow-x: hidden;
+    }
+
+    /* 2️⃣ PAGE WRAP SAFETY */
+    .page-wrap {
+        padding: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    /* 3️⃣ TOUR HEADER STACK (already visual-safe) */
+    .tour-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    /* 4️⃣ GALLERY SLIDER OVERFLOW FIX */
+    .gallery-slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .gallery-track {
+        gap: 12px;
+    }
+
+    .gallery-track img {
+        min-width: 100%;
+        height: 200px;
+    }
+
+    /* 5️⃣ INFO CARDS SAFE STACK */
+    .info-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* 6️⃣ SIDEBAR MOBILE SAFETY */
+    .sidebar {
+        position: relative;
+        top: 0;
+        animation: none;
+        margin-top: 30px;
+    }
+
+    /* 7️⃣ TABS MOBILE TOUCH SAFETY */
+    .tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VIEW FIX */
+@media (max-width: 768px) {
+
+  /* Banner overall height reduce */
+  .rts-banner-area-one .rts-hero-banner {
+    height: 520px; /* pehle 950px tha */
+  }
+
+  /* Search / content section ko upar lao */
+  .rts__section.advance__search__section {
+    margin-top: -40px;  /* upar se gap kam */
+    padding-top: 20px;
+  }
+
+  /* Heading spacing reduce */
+  .rts-banner-area-one .section-title-area {
+    padding-top: 10px;
+  }
+
+  .rts-banner-area-one .section-title {
+    margin-top: 10px;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  /* Subtitle gap reduce */
+  .rts-banner-area-one .sub-title {
+    margin-bottom: 8px;
+  }
+
+  /* CTA buttons ke upar ka gap kam */
+  .banner-btn-group {
+    margin-top: 20px !important;
+  }
+
+  /* Pagination thoda upar */
+  .rts-banner-area-one .swiper-pagination-area {
+    bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+
+  .banner-btn-group a {
+    margin-bottom: 12px;   /* buttons ke beech gap */
+  }
+
+  .banner-btn-group a:last-child {
+    margin-bottom: 0;      /* last button ke niche extra gap nahi */
+  }
+
+}
+@media (max-width: 768px) {
+
+  /* Image container height auto */
+  .destination-wrapper .image-area img {
+    width: 100%;
+    height: auto;              /* IMPORTANT */
+    object-fit: contain;       /* full image show */
+  }
+
+  /* Gradient overlay height auto */
+  .destination-wrapper .image-area a::after {
+    height: 100%;
+  }
+
+  /* Card spacing thoda adjust */
+  .destination-wrapper {
+    border-radius: 16px;
+  }
+
+  /* Text ko thoda upar lao (kyunki image full ho gayi) */
+  .destination-wrapper .content {
+    bottom: 20px;
+    max-width: 90%;
+  }
+
+}
