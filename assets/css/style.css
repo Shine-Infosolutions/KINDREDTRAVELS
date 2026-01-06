@@ -27537,3 +27537,28 @@ body {
 
 
 
+@media (max-width: 768px) {
+
+    /* Container equal padding */
+    .rts-counter-area .container {
+        padding-left: 80px;
+        padding-right: 100px;
+    }
+
+    /* Center column */
+    .rts-counter-area .section-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Card full balance */
+    .rts-counter-area .counter-wrapper {
+        width: 100%;
+        max-width: 100%;          /* 👈 IMPORTANT */
+        margin: 0 auto;
+        padding: 16px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
