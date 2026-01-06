@@ -27396,31 +27396,17 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MOBILE VIEW FIX */
 @media (max-width: 768px) {
 
   /* Banner overall height reduce */
   .rts-banner-area-one .rts-hero-banner {
-    height: 520px; /* pehle 950px tha */
+    height: 520px; 
   }
 
   /* Search / content section ko upar lao */
   .rts__section.advance__search__section {
-    margin-top: -40px;  /* upar se gap kam */
+    margin-top: -40px; 
     padding-top: 20px;
   }
 
@@ -27453,11 +27439,11 @@ body {
 @media (max-width: 768px) {
 
   .banner-btn-group a {
-    margin-bottom: 12px;   /* buttons ke beech gap */
+    margin-bottom: 12px;   
   }
 
   .banner-btn-group a:last-child {
-    margin-bottom: 0;      /* last button ke niche extra gap nahi */
+    margin-bottom: 0;      
   }
 
 }
@@ -27467,7 +27453,7 @@ body {
   .destination-wrapper .image-area img {
     width: 100%;
     height: auto;              /* IMPORTANT */
-    object-fit: contain;       /* full image show */
+    object-fit: contain;       
   }
 
   /* Gradient overlay height auto */
@@ -27475,12 +27461,12 @@ body {
     height: 100%;
   }
 
-  /* Card spacing thoda adjust */
+  /* Card spacing  adjust */
   .destination-wrapper {
     border-radius: 16px;
   }
 
-  /* Text ko thoda upar lao (kyunki image full ho gayi) */
+ 
   .destination-wrapper .content {
     bottom: 20px;
     max-width: 90%;
@@ -27495,7 +27481,7 @@ body {
     aspect-ratio: 4 / 3;     /* proper card ratio */
     overflow: hidden;
     border-radius: 12px;
-    background: #000;        /* gap aaye to clean lage */
+    background: #000;        
   }
 
   /* Image full show – NO CROP */
@@ -27509,27 +27495,27 @@ body {
 /* Counter wrapper flex for desktop */
 .rts-counter-area .section-inner {
     display: flex;
-    flex-wrap: wrap; /* allow wrapping */
-    gap: 20px; /* spacing between cards */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 /* Each counter card */
 .rts-counter-area .counter-wrapper {
-    flex: 1 1 22%; /* default width for desktop */
-    min-width: 200px; /* ensure cards don't get too small */
+    flex: 1 1 22%; 
+    min-width: 200px; 
 }
 
 /* Responsive for tablets / mobile */
 @media (max-width: 768px) {
     .rts-counter-area .counter-wrapper {
-        flex: 1 1 45%; /* two cards per row */
-        margin-bottom: 20px; /* spacing at bottom */
+        flex: 1 1 45%; 
+        margin-bottom: 20px; 
     }
 }
 
 @media (max-width: 480px) {
     .rts-counter-area .counter-wrapper {
-        flex: 1 1 100%; /* stack full width if very small */
+        flex: 1 1 100%; 
     }
 }
 
@@ -27555,7 +27541,7 @@ body {
     /* Card full balance */
     .rts-counter-area .counter-wrapper {
         width: 100%;
-        max-width: 100%;          /* 👈 IMPORTANT */
+        max-width: 100%;         
         margin: 0 auto;
         padding: 16px;
         box-sizing: border-box;
